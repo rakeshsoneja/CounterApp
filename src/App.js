@@ -1,13 +1,16 @@
 import './App.css';
+// import CounterApp from './counterComponents/counterScreen.js';
+import ChatBox from './chatbox/chatbox.js';
 import CounterApp from './counterComponents/counterScreen.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h3>Counter App</h3>
+    <div>
+      {/* <header className="App-header"> */}
+        {/* <h3>Counter App</h3> */}
+        {/* <ChatBox /> */}
         <CounterApp />
-      </header>
+      {/* </header> */}
     </div>
   );
 }

@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import '../customStyles/counterComponentStyles.css';
+import CounterButton from './CounterBtn.js';
 
 function CounterApp() {
     const [counterValue, setCounter] = useState(0);
 
     const counterStyle = {
-        color: counterValue < 0 ? 'red' : 'white',
+        color: counterValue < 0 ? 'red' : (counterValue === 0 ? 'black' : 'green')
     };
 
     function incrementCount() {
-        setCounter(counterValue + 1)
+        setCounter(counterValue + 1);
     }
 
     function decrementCount(){
@@ -21,13 +22,24 @@ function CounterApp() {
     }
 
     return (
-        <div>
-            <p style={counterStyle}>{counterValue}</p>
+        <div className='container'>
+            <h3> Counter App </h3>
+            <p style={counterStyle} id="counter">{counterValue}</p>
             <div>
-                <button class="decrementBtn" onClick={decrementCount}>Decrement</button>
-                <button class="resetBtn" onClick={resetCount}>Reset</button>
-                <button class="incrementBtn" onClick={incrementCount}>Increment</button>
+                <CounterButton
+                className='incrementBtn'
+                title="Increment"
+                action={incrementCount}/>
+                <CounterButton
+                className='resetBtn'
+                title="Reset"
+                action={resetCount}/>
+                <CounterButton
+                className='decrementBtn'
+                title="Decrement"
+                action={decrementCount}/>
             </div>
+
         </div>
     )
 }

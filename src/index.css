@@ -12,35 +12,3 @@ code {
     monospace;
 }
 
-.incrementBtn {
-  border-radius: 10px;
-  background-color: lightcoral;
-  width: 100px;
-  margin: 5px;
-  height: 35px;
-  font-family: sans-serif;
-  font-size: 16px;
-  color: white;
-}
-
-.decrementBtn {
-  border-radius: 10px;
-  background-color: lightcoral;
-  width: 100px;
-  margin: 5px;
-  height: 35px;
-  font-family: sans-serif;
-  font-size: 16px;
-  color: white;
-}
-
-.resetBtn {
-  border-radius: 10px;
-  background-color: rebeccapurple;
-  width: 75px;
-  margin: 5px;
-  height: 35px;
-  font-family: sans-serif;
-  font-size: 16px;
-  color: white;
-}
