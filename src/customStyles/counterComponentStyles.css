@@ -45,6 +45,7 @@
 .messageWindow {
   display: flex;
   /* Allows items to grow and shrink as needed */
+
   text-align: left; /* Center text inside the items */
   padding: 10px;
   border: 1px solid #ccc;
@@ -98,3 +99,8 @@
 #counter {
   font-size: 35px;
 }
+
+
+/* .icon-btn svg {
+  margin-right: 8px; /* Space between icon and text */
+/* } */

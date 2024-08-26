@@ -1,0 +1,83 @@
+.sidebar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(224, 209, 209);
+    overflow-x: hidden;
+    padding-top: 16px;
+    border-right: 2px;
+    border-style: solid;
+    border-color: beige;
+  }
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* .maincontent {
+    margin-left: 160px;
+    padding: 0px 10px;
+} */
+
+.maincontent {
+  margin-left: 160px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+    background-color: rgb(224, 209, 209);
+    /* background-image: '/67399.jpg'; */
+}
+
+.titleHeader {
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.imageClass {
+  max-width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+.rightContent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.centeredForm {
+  width: 60vw; /* Adjust as needed */
+  padding: 20px;
+  border: 2px solid #333; /* 2px border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  background-color: #fff; /* White background */
+}
+
+.centeredForm h3 {
+  text-align: center;
+}
+
+.centeredForm input[type="text"],
+.centeredForm input[type="password"],
+.centeredForm input[type="email"],
+.centeredForm input[type="tel"] {
+
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
