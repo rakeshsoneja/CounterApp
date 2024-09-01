@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './MainScreen.css';
 import About from './About';
 import Registration from './Registration';
+import Login from './Login';
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
 // import Registration from './Registration';
@@ -25,6 +26,8 @@ function MainView() {
 
         case 'registration':
             return <Registration />;
+        case 'login':
+            return <Login />;
         default:
             return null;
 
