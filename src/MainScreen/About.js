@@ -5,13 +5,11 @@ function About() {
 
     return (
         <div>
-            <h3 id="titleHeader" className="titleHeader">Welcome to Cab Booking</h3>
+            <h3 id="titleHeader" className="titleHeader">Book Your Ride with WorkCommute</h3>
                 <p>Our cab booking app is designed to provide users with a seamless and convenient way to book rides. Whether you're commuting to work, heading to an appointment, or planning a night out, our app ensures that you can get a reliable ride quickly and easily.</p>
                 <div id="rightContent" className="rightContent">
-        
-                    <img src="/car.png" alt="Description of the image" className="imageClass" />
-                        
-            </div>
+                    <img src="/car.png" alt="Cab" className="imageClass" />
+                </div>
             {/* <div>
                 <title>About</title>
             </div>
